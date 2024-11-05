@@ -3,8 +3,11 @@
 
 // import defaultImportfrom 'Somelibrary';
 import Image from "next/image";
+import {ADDRESS,STATE,COUNTRY, AGE,SALARY,FAV_CAR } from '../helper';
 
-// import {namedImport} from 'Somelibrary';
+import obj1  from '../helper';
+
+// import { namedImport1,namedImport2,namedImport3,...} from 'Somelibrary';
 //import {Image} from "next/image";
 
 //2. Export Area
@@ -22,6 +25,10 @@ export default function Home() {
 
   // React Component return basic structure of HTML i.e JSX Javascript and XML
   return (
-    <h1>Hello {name} {surname}, {ADDRESS}</h1>
+    <>
+      <h1>Hello {name} {surname}, {ADDRESS} {STATE} {COUNTRY},Age = {AGE}, Salary={SALARY},FAV_CAR={FAV_CAR} </h1>
+      <h1>{ obj1.FAV_COLOR+" "+obj1.FAV_FRUIT} {obj1.FAV_LOCATION}</h1>
+    </>
+  
   );
 }
