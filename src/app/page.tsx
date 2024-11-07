@@ -16,7 +16,7 @@ import obj1  from '../helper';
 
 //I am outside the function defination
 let surname='Dollor'; // Global Varible
-export default function Home() {
+export default function Home() { //PacalCase
   //I can inside the function defination
   var name="Sunil"; //Local Variable 
 
